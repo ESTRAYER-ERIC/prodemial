@@ -5,69 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESTRAYER Eric - Conseiller Patrimonial</title>
     <style>
+        :root {
+            --bleu-marine: #0a2463;
+            --gris-anthracite: #3d4c5c;
+            --bleu-gris: #6c7b8b;
+            --gris-clair: #f8f9fa;
+            --texte: #333;
+        }
+
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: var(--texte);
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f9f9f9;
+            background-color: var(--gris-clair);
+            color: var(--gris-anthracite);
         }
+
         header {
             text-align: center;
             margin-bottom: 30px;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--bleu-gris);
         }
+
         h1 {
             font-size: 2em;
             margin-bottom: 10px;
+            color: var(--bleu-marine);
         }
+
         h2 {
             font-size: 1.5em;
             margin-top: 30px;
-            color: #2c3e50;
+            color: var(--bleu-marine);
+            border-bottom: 1px solid var(--bleu-gris);
+            padding-bottom: 5px;
         }
+
         .photo {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 20px;
+            border: 3px solid var(--bleu-gris);
         }
+
         nav ul {
             list-style: none;
             padding: 0;
             display: flex;
             justify-content: center;
             gap: 20px;
+            background-color: var(--bleu-marine);
+            padding: 10px;
+            border-radius: 4px;
         }
+
         nav a {
             text-decoration: none;
-            color: #2c3e50;
+            color: white;
             font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 2px;
         }
+
+        nav a:hover {
+            background-color: var(--bleu-gris);
+        }
+
         section {
             margin-bottom: 40px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
+
         footer {
             text-align: center;
             margin-top: 50px;
             padding: 20px;
-            border-top: 1px solid #ddd;
+            border-top: 1px solid var(--bleu-gris);
             font-size: 0.9em;
+            color: var(--gris-anthracite);
         }
+
         .contact-info {
             margin-top: 20px;
         }
 
         /* Style pour l'accordéon des mentions légales */
         .accordion {
-            border: 1px solid #ddd;
+            border: 1px solid var(--bleu-gris);
             border-radius: 4px;
             margin-top: 10px;
+            overflow: hidden;
         }
+
         .accordion-header {
-            background-color: #f5f5f5;
+            background-color: var(--bleu-marine);
+            color: white;
             padding: 10px 15px;
             cursor: pointer;
             font-size: 0.9em;
@@ -75,24 +116,34 @@
             justify-content: space-between;
             align-items: center;
         }
+
         .accordion-content {
             padding: 15px;
             font-size: 0.85em;
             line-height: 1.5;
             display: none;
+            background-color: white;
+            color: var(--texte);
         }
+
         .accordion-content ul {
             margin-left: 20px;
             padding-left: 10px;
         }
+
         .accordion-content a {
-            color: #2c3e50;
+            color: var(--bleu-marine);
+            text-decoration: none;
+        }
+
+        .accordion-content a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="2018_id_eric-300px.jpg" alt="ESTRAYER Eric" class="photo">
+        <img src="photo-id-eric.jpg" alt="ESTRAYER Eric" class="photo">
         <h1>ESTRAYER Eric</h1>
         <p>Conseiller Patrimonial membre du réseau Prodemial</p>
         <nav>
@@ -207,4 +258,3 @@ Indépendants et mandataires des sociétés du Groupe, les consultants en gestio
     </script>
 </body>
 </html>
-
