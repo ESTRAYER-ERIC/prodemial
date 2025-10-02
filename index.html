@@ -7,22 +7,43 @@
     <style>
         :root {
             --bleu-marine: #0a2463;
-            --gris-anthracite: #3d4c5c;
-            --gris-anthracite-clair: #4a5868;
+            --gris-anthracite: #242c35;
+            --gris-anthracite-clair: #757e89;
+            /*--gris-anthracite-clair: #4a5868;*/
             --bleu-gris: #6c7b8b;
-            --gris-clair: #f8f9fa;
-            --texte: rgba(255, 255, 255, 0.9);
+            --gris-clair: #747f8a;
+            --texte: rgb(26, 45, 136);
             --texte-fonce: #333;
         }
 
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            color: var(--texte);
+            color: var(--texte-fonce);
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: var(--gris-anthracite-clair);
+            background-color: var(--gris-clair);
+        }
+
+        /* unvisited link */
+        a:link {
+        color: var(--gris-clair);
+        }
+
+        /* visited link */
+        a:visited {
+        color: var(--gris-clair);
+        }
+
+        /* mouse over link */
+        a:hover {
+        color: white;
+        }
+
+        /* selected link */
+        a:active {
+           color: var(--gris-clair);
         }
 
         header {
@@ -31,22 +52,28 @@
             padding: 20px;
             border-radius: 12px;
             background-color: rgba(255, 255, 255, 0.05);
+            color: white;
+        }
+
+        header ul {
+            list-style: none;
+
         }
 
         h1 {
             font-size: 2em;
             margin-bottom: 10px;
-            color: white;
+            color: var(--bleu-marine);
         }
 
         header p {
-            color: rgba(255, 255, 255, 0.8);
+            color: white;
         }
 
         h2 {
             font-size: 1.5em;
             margin-top: 30px;
-            color: white;
+            color: black;
             border-bottom: 2px solid var(--bleu-gris);
             padding-bottom: 5px;
             border-radius: 4px;
@@ -61,13 +88,14 @@
             border: 3px solid white;
         }
 
-        nav ul {
+       nav ul {
             list-style: none;
             padding: 0;
             display: flex;
             justify-content: center;
             gap: 15px;
             background-color: var(--bleu-marine);
+            color: white;
             padding: 10px 20px;
             border-radius: 20px;
             margin: 0 auto;
@@ -76,7 +104,6 @@
 
         nav a {
             text-decoration: none;
-            color: white;
             font-weight: bold;
             padding: 8px 15px;
             border-radius: 15px;
@@ -84,16 +111,16 @@
         }
 
         nav a:hover {
-            background-color: var(--gris-anthracite);
+            background-color: var(--gris-clair);
         }
 
         section {
             margin-bottom: 40px;
-            background-color: rgba(255, 255, 255, 0.05);
             padding: 25px;
             border-radius: 12px;
             border: 1px solid rgba(255, 255, 255, 0.1);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: white;
         }
 
         section p {
@@ -173,8 +200,8 @@
 
         /* Style pour les listes de services */
         #services ul {
-            list-style: none;
-            padding: 0;
+            list-style: disc;
+
         }
 
         #services li {
@@ -215,12 +242,12 @@
 	    <p>
              Composé de deux racines grecques « pro » et « demos » (=pour les gens), Prodémial traduit notre vocation, celle d’aider les gens.
             </p>
-	    <p>Nous les aidons de deux manières :
+	    <p>Nous les aidons de deux manières :</p>
             <ul>
                  <li>à se constituer, diversifier et valoriser leur patrimoine ;</li>
                  <li>à saisir une opportunité professionnelle dans le domaine de la gestion de patrimoine.</li>
             </ul>
-En un quart de siècle, grâce à son réseau national de consultants, Finzzle groupe et Prodémial ont permis à plus de 150 700 investisseurs d’accéder à un accompagnement patrimonial, habituellement réservé à une clientèle privilégiée.
+<p>En un quart de siècle, grâce à son réseau national de consultants, Finzzle groupe et Prodémial ont permis à plus de 150 700 investisseurs d’accéder à un accompagnement patrimonial, habituellement réservé à une clientèle privilégiée.
 
 Indépendants et mandataires des sociétés du Groupe, les consultants en gestion de patrimoine Prodémial s’appuient exclusivement sur leur cercle relationnel et la recommandation dans la recherche et l’accompagnement de clients.
 
@@ -229,22 +256,22 @@ Indépendants et mandataires des sociétés du Groupe, les consultants en gestio
         </section>
 
         <section id="services">
-            <h2>Les produits d’investissement proposés couvrent l’ensemble des besoins patrimoniaux</h2>
+            <h3>Les produits d’investissement proposés couvrent l’ensemble des besoins patrimoniaux :</h3>
             <ul>
-                <li>Diagnostic patrimonial complet</li>
-                <li>Optimisation fiscale et successorale</li>
-                <li>Conseil en investissements financiers et immobiliers</li>
-                <li>Préparation à la retraite</li>
-                <li>Constitution et la valorisation du patrimoine familial</li>
-                <li>Protection de la famille</li>
+                <li>Diagnostic patrimonial complet.</li>
+                <li>Optimisation fiscale et successorale.</li>
+                <li>Conseil en investissements financiers et immobiliers.</li>
+                <li>Préparation à la retraite.</li>
+                <li>Constitution et la valorisation du patrimoine familial.</li>
+                <li>Protection de la famille.</li>
             </ul>
-            <h2>Cette gamme complète de solutions patrimoniales est assemblée au sein des trois sociétés Stellium.</h2>
-                Expérimentées dans la sélection de partenaires de renom et de produits d’investissement, ces trois structures de distribution sont complémentaires :
+            <h3>Cette gamme complète de solutions patrimoniales est assemblée au sein des trois sociétés Stellium. Expérimentées dans la sélection de partenaires de renom et de produits d’investissement, ces trois structures de distribution sont complémentaires :
+            </h3>
             <ul>
-                 <li>les solutions immobilières, avec Stellium Immobilier ;</li>
-                 <li>les solutions d’assurance-vie et les produits de financement, les produits de placement financier, avec Stellium Placement ;</li>
-                 <li>les solutions de financements, avec Stellium Financement</li>
-
+                 <li>Large choix de biens avec Stellium Immobilier.</li>
+                 <li>Solutions d’assurance-vie et de placement financier, avec Stellium Placement.</li>
+                 <li>Crédits, avec Stellium Financement</li>
+            </ul>   
         </section>
 
 
@@ -258,10 +285,9 @@ Indépendants et mandataires des sociétés du Groupe, les consultants en gestio
         </section>
 
         <section id="legal">
-            <h2>Mentions légales</h2>
             <div class="accordion">
                 <div class="accordion-header" onclick="toggleAccordion()">
-                    <span>Afficher les mentions légales</span>
+                    <span>Mentions légales</span>
                     <span>+</span>
                 </div>
                 <div class="accordion-content" id="accordionContent">
@@ -270,7 +296,7 @@ Indépendants et mandataires des sociétés du Groupe, les consultants en gestio
                         Attestation d’habilitation délivrée à Toulouse par Stellium Immobilier titulaire de la carte de transaction immobilière n° CPI 3101 2015 000 001 813
                     </p>
                     <p>
-                        Enregistrement à l’<a href="https://www.orias.fr" target="_blank">ORIAS</a> en qualité de :
+                        Enregistrement en cours à l’<a href="https://www.orias.fr" target="_blank">ORIAS</a> en qualité de :
                     </p>
                     <ul>
                         <li>Mandataire d’intermédiaire en opérations de banque et en services de paiement</li>
