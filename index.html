@@ -7,58 +7,31 @@
     <style>
         :root {
             --bleu-marine: #0a2463;
-            --gris-anthracite: #242c35;
-            --gris-anthracite-clair: #757e89;
-            /*--gris-anthracite-clair: #4a5868;*/
             --bleu-gris: #6c7b8b;
-            --gris-clair: #747f8a;
+            --turquoise:#8acce0;;
             --texte: rgb(26, 45, 136);
-            --texte-fonce: #333;
         }
 
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            color: var(--texte-fonce);
+            color: var(--texte);
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: var(--gris-clair);
+            background-color: #63b7d1;
         }
 
-        /* unvisited link */
-        a:link {
-        color: var(--gris-clair);
-        }
-
-        /* visited link */
-        a:visited {
-        color: var(--gris-clair);
-        }
-
-        /* mouse over link */
-        a:hover {
-        color: white;
-        }
-
-        /* selected link */
-        a:active {
-           color: var(--gris-clair);
-        }
 
         header {
             text-align: center;
             margin-bottom: 30px;
             padding: 20px;
             border-radius: 12px;
-            background-color: rgba(255, 255, 255, 0.05);
+            background-color: var(--turquoise);
             color: white;
         }
 
-        header ul {
-            list-style: none;
-
-        }
 
         h1 {
             font-size: 2em;
@@ -66,17 +39,21 @@
             color: var(--bleu-marine);
         }
 
-        header p {
-            color: white;
-        }
-
         h2 {
             font-size: 1.5em;
             margin-top: 30px;
-            color: black;
+            color: var(--bleu-marine);
             border-bottom: 2px solid var(--bleu-gris);
             padding-bottom: 5px;
             border-radius: 4px;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        h4 {
+            color: var(--bleu-marine);
         }
 
         .photo {
@@ -86,32 +63,6 @@
             object-fit: cover;
             margin-bottom: 20px;
             border: 3px solid white;
-        }
-
-       nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            background-color: var(--bleu-marine);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 20px;
-            margin: 0 auto;
-            width: fit-content;
-        }
-
-        nav a {
-            text-decoration: none;
-            font-weight: bold;
-            padding: 8px 15px;
-            border-radius: 15px;
-            transition: background-color 0.2s;
-        }
-
-        nav a:hover {
-            background-color: var(--gris-clair);
         }
 
         section {
@@ -126,6 +77,7 @@
         section p {
             color: var(--texte);
         }
+
 
         footer {
             text-align: center;
@@ -217,20 +169,40 @@
 </head>
 <body>
     <header>
-        <img src="https://github.com/ESTRAYER-ERIC/prodemial/raw/refs/heads/main/photo-id-eric.jpg" alt="ESTRAYER Eric" class="photo">
-        <h1>ESTRAYER Eric</h1>
-        <p>Conseiller Patrimonial membre du réseau Prodemial</p>
-        <nav>
-            <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#legal">Mentions légales</a></li>
-            </ul>
-        </nav>
+        <img src="photo-id-eric.webp" alt="Eric ESTRAYER" class="photo">
+        <h1>Eric ESTRAYER</h1>
+        <h3>Conseiller Patrimonial membre du réseau Prodemial</h3>
     </header>
 
     <main>
+
+        <section id="services">
+            <h4>Les produits d’investissement proposés couvrent l’ensemble des besoins patrimoniaux :</h4>
+            <ul>
+                <li>Diagnostic patrimonial complet.</li>
+                <li>Optimisation fiscale et successorale.</li>
+                <li>Conseil en investissements financiers et immobiliers.</li>
+                <li>Préparation à la retraite.</li>
+                <li>Constitution et la valorisation du patrimoine familial.</li>
+                <li>Protection de la famille.</li>
+            </ul>
+            <h4>Cette gamme complète de solutions patrimoniales est assemblée au sein des trois sociétés Stellium. Expérimentées dans la sélection de partenaires de renom et de produits d’investissement, ces trois structures de distribution sont complémentaires :</h4>
+            <ul>
+                 <li>Large choix de biens avec Stellium Immobilier.</li>
+                 <li>Solutions d’assurance-vie et de placement financier, avec Stellium Placement.</li>
+                 <li>Crédits, avec Stellium Financement</li>
+            </ul>   
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p>Téléphone : 07.67.04.88.23</p>
+                <P><img src="email.png" alt="eric.estrayer [arobase] etik.com"></P>
+            </div>
+        </section>
+
+
         <section id="about">
             <h2>À propos</h2>
             <p>
@@ -255,34 +227,7 @@ Indépendants et mandataires des sociétés du Groupe, les consultants en gestio
             </p>
         </section>
 
-        <section id="services">
-            <h3>Les produits d’investissement proposés couvrent l’ensemble des besoins patrimoniaux :</h3>
-            <ul>
-                <li>Diagnostic patrimonial complet.</li>
-                <li>Optimisation fiscale et successorale.</li>
-                <li>Conseil en investissements financiers et immobiliers.</li>
-                <li>Préparation à la retraite.</li>
-                <li>Constitution et la valorisation du patrimoine familial.</li>
-                <li>Protection de la famille.</li>
-            </ul>
-            <h3>Cette gamme complète de solutions patrimoniales est assemblée au sein des trois sociétés Stellium. Expérimentées dans la sélection de partenaires de renom et de produits d’investissement, ces trois structures de distribution sont complémentaires :
-            </h3>
-            <ul>
-                 <li>Large choix de biens avec Stellium Immobilier.</li>
-                 <li>Solutions d’assurance-vie et de placement financier, avec Stellium Placement.</li>
-                 <li>Crédits, avec Stellium Financement</li>
-            </ul>   
-        </section>
 
-
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <div class="contact-info">
-                <p>Téléphone : 07.67.04.88.23</p>
-                <p>Email : eric.estrayer [at] etik.com (remplacer le [at] par @).</p>
-            </div>
-        </section>
 
         <section id="legal">
             <div class="accordion">
