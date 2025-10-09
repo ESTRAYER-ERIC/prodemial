@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric ESTRAYER - Conseiller Patrimonial</title>
+    <style>
+        :root {
+            --bleu-marine: #0a2463;
+            --bleu-gris: #6c7b8b;
+            --turquoise:#9ae0f5ad;;
+            --texte: rgb(26, 45, 136);
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--texte);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #63b7d1;
+        }
+
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 12px;
+            background-color: var(--turquoise);
+            color: white;
+        }
+
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: var(--bleu-marine);
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
+            color: var(--bleu-marine);
+            border-bottom: 2px solid var(--bleu-gris);
+            padding-bottom: 5px;
+            border-radius: 4px;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        h4 {
+            color: var(--bleu-marine);
+        }
+
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid white;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        section p {
+            color: var(--texte);
+        }
+
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            background-color: rgba(255, 255, 255, 0.03);
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin: 8px 0;
+            color: var(--texte);
+        }
+
+        /* Style pour l'accordéon des mentions légales */
+        .accordion {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            margin-top: 10px;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.03);
+        }
+
+        .accordion-header {
+            background-color: var(--bleu-marine);
+            color: white;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 0.9em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 12px;
+        }
+
+        .accordion-content {
+            padding: 20px;
+            font-size: 0.85em;
+            line-height: 1.6;
+            display: none;
+            background-color: rgba(255, 255, 255, 0.05);
+            color: var(--texte);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .accordion-content ul {
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+
+        .accordion-content a {
+            color: var(--bleu-gris);
+            text-decoration: none;
+        }
+
+        .accordion-content a:hover {
+            text-decoration: underline;
+            color: white;
+        }
+
+        .accordion-content p,
+        .accordion-content li {
+            color: var(--texte);
+        }
+
+        /* Style pour les listes de services */
+        #services ul {
+            list-style: disc;
+
+        }
+
+        #services li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--texte);
+        }
+
+        #services li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="photo-id-eric.webp" alt="Eric ESTRAYER" class="photo">
+        <h1>Eric ESTRAYER</h1>
+        <h3>Conseiller Patrimonial membre du réseau Prodemial</h3>
+    </header>
+
+    <main>
+
+        <section id="services">
+            <h4>Les produits d’investissement proposés couvrent l’ensemble des besoins patrimoniaux :</h4>
+            <ul>
+                <li>Diagnostic patrimonial complet.</li>
+                <li>Optimisation fiscale et successorale.</li>
+                <li>Conseil en investissements financiers et immobiliers.</li>
+                <li>Préparation à la retraite.</li>
+                <li>Constitution et la valorisation du patrimoine familial.</li>
+                <li>Protection de la famille.</li>
+                <li>Regroupement de crédits.</li>
+            </ul>
+            <h4>Cette gamme complète de solutions patrimoniales est assemblée au sein des trois sociétés Stellium. Expérimentées dans la sélection de partenaires de renom et de produits d’investissement, ces trois structures de distribution sont complémentaires :</h4>
+            <ul>
+                 <li>Large choix de biens avec Stellium Immobilier.</li>
+                 <li>Solutions d’assurance-vie et de placement financier, avec Stellium Placement.</li>
+                 <li>Crédits, avec Stellium Financement</li>
+            </ul>   
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p>Téléphone : 07.67.04.88.23</p>
+                <P><img src="email.png" alt="eric.estrayer [arobase] etik.com"></P>
+            </div>
+        </section>
+
+
+        <section id="about">
+            <h2>À propos</h2>
+            <p>
+                Grâce au réseau Prodemial, je vous accompagne dans la construction et la préservation de votre patrimoine, en toute transparence et indépendance.
+            </p>
+            <p>
+                Mon approche est centrée sur vos objectifs et votre situation personnelle, pour vous proposer des solutions sur-mesure.
+            </p>
+	    <p>
+             Composé de deux racines grecques « pro » et « demos » (=pour les gens), Prodémial traduit notre vocation, celle d’aider les gens.
+            </p>
+	    <p>Nous les aidons de deux manières :</p>
+            <ul>
+                 <li>à se constituer, diversifier et valoriser leur patrimoine ;</li>
+                 <li>à saisir une opportunité professionnelle dans le domaine de la gestion de patrimoine.</li>
+            </ul>
+<p>En un quart de siècle, grâce à son réseau national de consultants, Finzzle groupe et Prodémial ont permis à plus de 150 700 investisseurs d’accéder à un accompagnement patrimonial, habituellement réservé à une clientèle privilégiée.
+
+Indépendants et mandataires des sociétés du Groupe, les consultants en gestion de patrimoine Prodémial s’appuient exclusivement sur leur cercle relationnel et la recommandation dans la recherche et l’accompagnement de clients.
+
+
+            </p>
+        </section>
+
+
+
+        <section id="legal">
+            <div class="accordion">
+                <div class="accordion-header" onclick="toggleAccordion()">
+                    <span>Mentions légales</span>
+                    <span>+</span>
+                </div>
+                <div class="accordion-content" id="accordionContent">
+                    <p>
+                        EI - Siret: 75178540300047 - RSAC Montpellier<br>
+                        Attestation d’habilitation délivrée à Toulouse par Stellium Immobilier titulaire de la carte de transaction immobilière n° CPI 3101 2015 000 001 813
+                    </p>
+                    <p>
+                        Enregistrement en cours à l’<a href="https://www.orias.fr" target="_blank">ORIAS</a> en qualité de :
+                    </p>
+                    <ul>
+                        <li>Mandataire d’intermédiaire en opérations de banque et en services de paiement</li>
+                        <li>Mandataire d’intermédiaire d’assurance pour le compte de Stellium Courtage</li>
+                    </ul>
+                    <p>
+                        Membre de l’association professionnelle ANACOFI Courtage agréée par l’AMF<br>
+                        Assurance RCP auprès de AON FRANCE, 31-35 rue de la Fédération, 75717 PARIS CEDEX 15<br>
+                        Médiateur de la consommation ANM Conso - <a href="https://www.anm-conso.com" target="_blank">www.anm-conso.com</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ESTRAYER Eric - Conseiller Patrimonial membre du réseau Prodemial</p>
+    </footer>
+
+    <script>
+        function toggleAccordion() {
+            const content = document.getElementById('accordionContent');
+            const header = document.querySelector('.accordion-header span:last-child');
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                header.textContent = '+';
+            } else {
+                content.style.display = 'block';
+                header.textContent = '-';
+            }
+        }
+    </script>
+</body>
+</html>
