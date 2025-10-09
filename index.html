@@ -230,6 +230,40 @@
             border-color: rgba(255,255,255,0.5);
         }
         
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+            margin-bottom: 50px;
+            padding-bottom: 50px;
+            border-bottom: 2px solid var(--bleu-gris);
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 5em;
+            font-weight: 700;
+            color: var(--bleu-marine);
+            margin-bottom: 15px;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: var(--bleu-marine);
+            margin-bottom: 15px;
+        }
+        
+        .stat-description {
+            font-size: 1em;
+            color: var(--texte);
+            line-height: 1.6;
+        }
+        
         .about-text {
             line-height: 1.9;
             font-size: 1.1em;
@@ -265,6 +299,21 @@
         .highlight-box strong {
             color: var(--bleu-marine);
             font-size: 1.15em;
+        }
+        
+        .about-quote {
+            background: rgba(10, 36, 99, 0.05);
+            border-left: 4px solid var(--bleu-marine);
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+        
+        .about-quote p {
+            color: var(--texte);
+            margin: 0;
+            font-size: 1.05em;
+            line-height: 1.7;
         }
         
         .legal {
@@ -396,6 +445,18 @@
         
         <div class="card">
             <h2>À propos</h2>
+           <div class="about-stats">
+                <div class="stat-item">
+                    <div class="stat-number">25</div>
+                    <div class="stat-label">Années d'Expérience</div>
+                    <div class="stat-description">Un quart de siècle d'expertise au service des investisseurs</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">150K+</div>
+                    <div class="stat-label">Investisseurs Accompagnés</div>
+                    <div class="stat-description">Plus de 150 700 clients ont fait confiance au réseau</div>
+                </div>
+            </div>
             <div class="about-text">
                 <p>Grâce au réseau Prodemial, je vous accompagne dans la construction et la préservation de votre patrimoine, en toute transparence et indépendance.</p>
                 
@@ -411,7 +472,11 @@
                     <li>à saisir une opportunité professionnelle dans le domaine de la gestion de patrimoine.</li>
                 </ul>
                 
-                <p>En un quart de siècle, grâce à son réseau national de consultants, Finzzle groupe et Prodémial ont permis à plus de 150 700 investisseurs d'accéder à un accompagnement patrimonial, habituellement réservé à une clientèle privilégiée. Indépendants et mandataires des sociétés du Groupe, les consultants en gestion de patrimoine Prodémial s'appuient exclusivement sur leur cercle relationnel et la recommandation dans la recherche et l'accompagnement de clients.</p>
+                <div class="about-quote">
+                    <p>En un quart de siècle, grâce à son réseau national de consultants, Finzzle groupe et Prodémial ont permis à plus de 150 700 investisseurs d'accéder à un accompagnement patrimonial, habituellement réservé à une clientèle privilégiée.</p>
+                </div>
+                
+                <p>Indépendants et mandataires des sociétés du Groupe, les consultants en gestion de patrimoine Prodémial s'appuient exclusivement sur leur cercle relationnel et la recommandation dans la recherche et l'accompagnement de clients.</p>
             </div>
             
             <div class="legal">
