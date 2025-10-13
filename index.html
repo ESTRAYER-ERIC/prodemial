@@ -195,41 +195,130 @@
             opacity: 0.95;
             line-height: 1.6;
         }
-        
-        .contact-info {
-            background: linear-gradient(135deg, var(--bleu-marine) 0%, #062056 100%);
-            color: white;
-            padding: 40px;
-            border-radius: 14px;
-            text-align: center;
-            margin-top: 40px;
-        }
-        
-        .contact-info h3 {
-            margin-bottom: 20px;
-            font-size: 1.6em;
-            font-weight: 700;
-        }
-        
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-            font-weight: 600;
-            padding: 16px 40px;
-            background: rgba(255,255,255,0.2);
-            border-radius: 10px;
-            display: inline-block;
-            margin-top: 10px;
-            transition: background 0.25s ease;
-            border: 2px solid rgba(255,255,255,0.3);
-        }
-        
-        .contact-info a:hover {
-            background: rgba(255,255,255,0.3);
-            border-color: rgba(255,255,255,0.5);
-        }
-        
+/* Remplacez le CSS de .contact-info et .contact-info a par ceci : */
+
+.contact-info {
+    background: linear-gradient(135deg, var(--bleu-marine) 0%, #062056 100%);
+    color: white;
+    padding: 40px 20px;
+    border-radius: 14px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-info h3 {
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 16px 20px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+    max-width: 400px;
+    transition: background 0.25s ease;
+    border: 2px solid rgba(255,255,255,0.3);
+    word-break: break-all;
+}
+
+.contact-info a img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contact-info a:hover {
+    background: rgba(255,255,255,0.3);
+    border-color: rgba(255,255,255,0.5);
+}
+
+/* Media queries pour mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 20px;
+    }
+    
+    header {
+        padding: 50px 30px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    header .subtitle {
+        font-size: 1.2em;
+    }
+    
+    .card {
+        padding: 35px 25px;
+    }
+    
+    .services-grid,
+    .stellium-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Optimisation section contact pour mobile */
+    .contact-info {
+        padding: 30px 15px;
+    }
+    
+    .contact-info h3 {
+        font-size: 1.4em;
+    }
+    
+    .contact-info a {
+        font-size: 1em;
+        padding: 12px 15px;
+        margin: 8px auto;
+    }
+    
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .stat-number {
+        font-size: 3.5em;
+    }
+    
+    .stat-label {
+        font-size: 1.2em;
+    }
+    
+    .stat-description {
+        font-size: 0.95em;
+    }
+}
+
+/* Media query supplémentaire pour très petits écrans */
+@media (max-width: 480px) {
+    .about-stats {
+        gap: 25px;
+    }
+    
+    .stat-number {
+        font-size: 3em;
+    }
+    
+    .stat-label {
+        font-size: 1.1em;
+        line-height: 1.3;
+    }
+    
+    .stat-description {
+        font-size: 0.9em;
+    }
+}        
         .about-stats {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
