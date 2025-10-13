@@ -195,39 +195,162 @@
             opacity: 0.95;
             line-height: 1.6;
         }
+/* Remplacez le CSS de .contact-info et .contact-info a par ceci : */
+
+.contact-info {
+    background: linear-gradient(135deg, var(--bleu-marine) 0%, #062056 100%);
+    color: white;
+    padding: 40px 20px;
+    border-radius: 14px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-info h3 {
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 16px 20px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+    max-width: 400px;
+    transition: background 0.25s ease;
+    border: 2px solid rgba(255,255,255,0.3);
+    word-break: break-all;
+}
+
+.contact-info a img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contact-info a:hover {
+    background: rgba(255,255,255,0.3);
+    border-color: rgba(255,255,255,0.5);
+}
+
+/* Media queries pour mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 20px;
+    }
+    
+    header {
+        padding: 50px 30px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    header .subtitle {
+        font-size: 1.2em;
+    }
+    
+    .card {
+        padding: 35px 25px;
+    }
+    
+    .services-grid,
+    .stellium-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Optimisation section contact pour mobile */
+    .contact-info {
+        padding: 30px 15px;
+    }
+    
+    .contact-info h3 {
+        font-size: 1.4em;
+    }
+    
+    .contact-info a {
+        font-size: 1em;
+        padding: 12px 15px;
+        margin: 8px auto;
+    }
+    
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .stat-number {
+        font-size: 3.5em;
+    }
+    
+    .stat-label {
+        font-size: 1.2em;
+    }
+    
+    .stat-description {
+        font-size: 0.95em;
+    }
+}
+
+/* Media query supplémentaire pour très petits écrans */
+@media (max-width: 480px) {
+    .about-stats {
+        gap: 25px;
+    }
+    
+    .stat-number {
+        font-size: 3em;
+    }
+    
+    .stat-label {
+        font-size: 1.1em;
+        line-height: 1.3;
+    }
+    
+    .stat-description {
+        font-size: 0.9em;
+    }
+}        
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+            margin-bottom: 50px;
+            padding-bottom: 50px;
+            border-bottom: 2px solid var(--bleu-gris);
+        }
         
-        .contact-info {
-            background: linear-gradient(135deg, var(--bleu-marine) 0%, #062056 100%);
-            color: white;
-            padding: 40px;
-            border-radius: 14px;
+        .stat-item {
             text-align: center;
-            margin-top: 40px;
         }
         
-        .contact-info h3 {
-            margin-bottom: 20px;
-            font-size: 1.6em;
+        .stat-number {
+            font-size: 5em;
             font-weight: 700;
+            color: var(--bleu-marine);
+            margin-bottom: 15px;
+            line-height: 1;
         }
         
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
+        .stat-label {
+            font-size: 1.5em;
             font-weight: 600;
-            padding: 16px 40px;
-            background: rgba(255,255,255,0.2);
-            border-radius: 10px;
-            display: inline-block;
-            margin-top: 10px;
-            transition: background 0.25s ease;
-            border: 2px solid rgba(255,255,255,0.3);
+            color: var(--bleu-marine);
+            margin-bottom: 15px;
         }
         
-        .contact-info a:hover {
-            background: rgba(255,255,255,0.3);
-            border-color: rgba(255,255,255,0.5);
+        .stat-description {
+            font-size: 1em;
+            color: var(--texte);
+            line-height: 1.6;
         }
         
         .about-text {
@@ -265,6 +388,21 @@
         .highlight-box strong {
             color: var(--bleu-marine);
             font-size: 1.15em;
+        }
+        
+        .about-quote {
+            background: rgba(10, 36, 99, 0.05);
+            border-left: 4px solid var(--bleu-marine);
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+        
+        .about-quote p {
+            color: var(--texte);
+            margin: 0;
+            font-size: 1.05em;
+            line-height: 1.7;
         }
         
         .legal {
@@ -396,6 +534,18 @@
         
         <div class="card">
             <h2>À propos</h2>
+           <div class="about-stats">
+                <div class="stat-item">
+                    <div class="stat-number">25</div>
+                    <div class="stat-label">Années d'Expérience</div>
+                    <div class="stat-description">Un quart de siècle d'expertise au service des investisseurs</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">150K+</div>
+                    <div class="stat-label">Investisseurs Accompagnés</div>
+                    <div class="stat-description">Plus de 150 700 clients ont fait confiance au réseau</div>
+                </div>
+            </div>
             <div class="about-text">
                 <p>Grâce au réseau Prodemial, je vous accompagne dans la construction et la préservation de votre patrimoine, en toute transparence et indépendance.</p>
                 
@@ -411,13 +561,17 @@
                     <li>à saisir une opportunité professionnelle dans le domaine de la gestion de patrimoine.</li>
                 </ul>
                 
-                <p>En un quart de siècle, grâce à son réseau national de consultants, Finzzle groupe et Prodémial ont permis à plus de 150 700 investisseurs d'accéder à un accompagnement patrimonial, habituellement réservé à une clientèle privilégiée. Indépendants et mandataires des sociétés du Groupe, les consultants en gestion de patrimoine Prodémial s'appuient exclusivement sur leur cercle relationnel et la recommandation dans la recherche et l'accompagnement de clients.</p>
+                <div class="about-quote">
+                    <p>En un quart de siècle, grâce à son réseau national de consultants, Finzzle groupe et Prodémial ont permis à plus de 150 700 investisseurs d'accéder à un accompagnement patrimonial, habituellement réservé à une clientèle privilégiée.</p>
+                </div>
+                
+                <p>Indépendants et mandataires des sociétés du Groupe, les consultants en gestion de patrimoine Prodémial s'appuient exclusivement sur leur cercle relationnel et la recommandation dans la recherche et l'accompagnement de clients.</p>
             </div>
             
             <div class="legal">
                 <p><strong>EI - Siret:</strong> 75178540300047 - RSAC Montpellier</p>
                 <p>Attestation d'habilitation délivrée à Toulouse par Stellium Immobilier titulaire de la carte de transaction immobilière n° CPI 3101 2015 000 001 813</p>
-                <p>Enregistrement en cours à l'<a href="https://www.orias.fr" target="_blank">ORIAS</a> en qualité de :</p>
+                <p>Enregistrement à l'<a href="https://www.orias.fr" target="_blank">ORIAS</a> sous le n°25007731 en qualité de :</p>
                 <ul>
                     <li>Mandataire d'intermédiaire en opérations de banque et en services de paiement</li>
                     <li>Mandataire d'intermédiaire d'assurance pour le compte de Stellium Courtage</li>
